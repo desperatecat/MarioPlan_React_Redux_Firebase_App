@@ -6,9 +6,11 @@ class App extends Component {
     return (
      
       <BrowserRouter>
+      
         <div className="App">
           <h1>MarioPlan</h1>
         </div>
+
       </BrowserRouter>
     );
   }
