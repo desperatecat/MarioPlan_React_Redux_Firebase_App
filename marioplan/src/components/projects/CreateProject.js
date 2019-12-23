@@ -16,7 +16,8 @@ class CreateProject extends Component {
     }
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log(this.state);
+        //console.log(this.state);
+        this.props.createProject(this.state)
     }
 
     render() {
@@ -47,4 +48,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect()(CreateProject)
+export default connect(null, mapDispatchToProps)(CreateProject)
